@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.yangjianzhou</groupId>
     <artifactId>spring-boot-unitils-starter</artifactId>
-    <version>1.1.2.RELEASE</version>
+    <version>1.2.0.RELEASE</version>
     <packaging>jar</packaging>
     <name>spring-boot-unitils-starter</name>
     <url>https://github.com/yangjianzhou/spring-boot-unitils</url>
@@ -68,37 +68,7 @@
             <artifactId>unitils-spring</artifactId>
             <version>3.4.6</version>
         </dependency>
-        <!--<dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>5.0.6.RELEASE</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId>
-            <version>5.0.6.RELEASE</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>5.0.6.RELEASE</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>5.0.6.RELEASE</version>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
-            <version>5.0.6.RELEASE</version>
-        </dependency>
-            <optional>true</optional>
-        </dependency>-->
+
         <dependency>
             <groupId>org.dbunit</groupId>
             <artifactId>dbunit</artifactId>
@@ -106,7 +76,7 @@
         </dependency>
     </dependencies>
 
-    <!--    <distributionManagement>
+        <distributionManagement>
             <repository>
                 <id>oss</id>
                 <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
@@ -116,9 +86,7 @@
                 <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
             </snapshotRepository>
         </distributionManagement>
-         <repositories>
-        </distributionManagement>-->
-
+<!--
     <distributionManagement>
         <repository>
             <id>releases</id>
@@ -142,7 +110,7 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-    </repositories>
+    </repositories>-->
 
     <build>
         <resources>
@@ -154,20 +122,20 @@
             </resource>
         </resources>
         <plugins>
-            <!--            <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-gpg-plugin</artifactId>
-                            <version>1.5</version>
-                            <executions>
-                                <execution>
-                                    <id>sign-artifacts</id>
-                                    <phase>verify</phase>
-                                    <goals>
-                                        <goal>sign</goal>
-                                    </goals>
-                                </execution>
-                            </executions>
-                        </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
